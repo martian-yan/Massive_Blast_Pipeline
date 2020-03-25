@@ -1,0 +1,13 @@
+# Working directory: use absolute path, or relative path based from "Snakefile" folder.
+workdir: ./test
+
+# input files, use absolute path, or relative path based from "workdir"
+query: test.tsv
+db_file: SopF.fa
+
+# querytype: protein or nucl
+querytype: nucl
+
+# translate_table if querytype is nucl
+# it's a paramater of Bio.Seq.translate module 
+translate_table: Bacterial
