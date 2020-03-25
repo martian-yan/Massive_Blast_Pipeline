@@ -45,7 +45,7 @@ This is a pipeline based on [`SnakeMake`](https://snakemake.readthedocs.io/en/st
     ...
     ```
 
-    **Notice**: when using absolute path, start from "root folder" (/), avoid using "home folder" (~) cause `SnakeMake` can't recognise "~".
+    **Notice**: when using absolute path, start from "root folder" (/), avoid using "home folder" (\~) cause `SnakeMake` can't recognise "\~".
 
 - Run snakemake: go to the folder with `Snakefile`, run
 
