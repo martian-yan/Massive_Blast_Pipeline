@@ -63,18 +63,18 @@ This is a pipeline based on [`SnakeMake`](https://snakemake.readthedocs.io/en/st
 
 ## Result
 
-    The final result is in the `result` folder, including:
+The final result is in the `result` folder, including:
 
-    - `protein_alleles.aln`: all the protein alleles,
-    - `protein_alignment.clustal`: an `clustalw` alignment of all the protein alleles,
-    - `protein_top10.aln`: top 10 protein alleles with most appearance,
-    - `protein_alignment_top10.clustal`: an `clustalw` alignment of top 10 protein alleles,
-    - `summary.tsv`: a summary of the protein type of each sequence.
+  - `protein_alleles.aln`: all the protein alleles,
+  - `protein_alignment.clustal`: an `clustalw` alignment of all the protein alleles,
+  - `protein_top10.aln`: top 10 protein alleles with most appearance,
+  - `protein_alignment_top10.clustal`: an `clustalw` alignment of top 10 protein alleles,
+  - `summary.tsv`: a summary of the protein type of each sequence.
 
 ## Todo
 
 The planned updates in the future:
 
-    - [ ] Use `--conda` feature of `SnakeMake` to automatically install dependencies,
-    - [ ] Support get all queries from a single folder rather than config the path one by one,
-    - [ ] Support use [`Last`](http://last.cbrc.jp/) rather than `Diamond`, `Last` is another sequence comparison program which is faster and can recognise frameshift mutation. 
+  - [ ] Use `--conda` feature of `SnakeMake` to automatically install dependencies,
+  - [ ] Support get all queries from a single folder rather than config the path one by one,
+  - [ ] Support use [`Last`](http://last.cbrc.jp/) rather than `Diamond`, `Last` is another sequence comparison program which is faster and can recognise frameshift mutations. 
