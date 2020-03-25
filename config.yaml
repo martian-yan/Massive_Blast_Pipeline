@@ -2,8 +2,8 @@
 workdir: ./test
 
 # input files, use absolute path, or relative path based from "workdir"
-query: test.tsv
-db_file: SopF.fa
+query: test.tsv # a table give the sequences ID and path
+reference: SopF.fa # a protein sequence
 
 # querytype: protein or nucl
 querytype: nucl

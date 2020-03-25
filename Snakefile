@@ -35,7 +35,7 @@ rule all:
 ### makeblastdb
 rule makedb:
     input:
-        protein=config["db_file"]
+        protein=config["reference"]
     output:
         "db/db.dmnd"
     params:
@@ -163,7 +163,7 @@ rule alignment:
 ### alignment top 10
 rule get_top10:
     input:
-        ref=config['db_file'],
+        ref=config['reference'],
         aln="result/protein_alleles.aln",
         tsv="result/summary.tsv"
     output:
